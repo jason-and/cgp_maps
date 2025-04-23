@@ -27,7 +27,7 @@ map <- leaflet(districts) %>%
                 opacity = 1,
                 color = "white",
                 dashArray = "3",
-                fillOpacity = 0.7,
+                fillOpacity = 0.4,
                 label = ~DISTRICT_TXT,
                 popup = ~ paste0("<b>District: </b>", DISTRICT_TXT, "<br><b>Number: </b>", DISTRICT_INT)
         ) %>%
