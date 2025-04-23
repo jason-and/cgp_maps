@@ -35,9 +35,8 @@ map <- leaflet(districts) %>%
         addLayersControl(
                 overlayGroups = unique(districts$DISTRICT_TXT),
                 options = layersControlOptions(collapsed = FALSE)
-        ) %>%
-               # Add reset view button
-    addResetMapButton()
+        )
+
 
 # Save the map
 htmlwidgets::saveWidget(map, "cook_county_districts_map.html", selfcontained = TRUE)
